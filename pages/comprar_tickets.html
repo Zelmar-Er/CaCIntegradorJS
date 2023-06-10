@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conf Bs As</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css" integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tickets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="navContainer topnav">
+            <div class="logo">
+                <a href="#">
+                    <img src="../assets/img/codoacodo.png" alt="Logo">
+                </a>
+                <h2>Conf Bs As</h2>
+                <i class="icon fa fa-bars"></i>
+            </div>
+            <nav>
+                <ul id="myLinks">
+                    <li>
+                        <a href="../index.html#laConferencia">La conferencia</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#losOradores">Los oradores</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#lugarFecha">El lugar y la fecha</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#convierteteOrador">Conviértete en orador</a>
+                    </li>
+                    <li>
+                        <a href="#">Comprar tickets</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container__tickets">
+            <section class="container__ticketsCards">
+                <div id="estudiante" class="tickets__card">
+                    <h2>Estudiante</h2>
+                    <p>Tiene un descuento</p>
+                    <p class="descuento">80%</p>
+                    <p class="aclaracion">* presentar documentación</p>
+                </div>
+                <div id="trainee" class="tickets__card">
+                    <h2>Trainee</h2>
+                    <p>Tiene un descuento</p>
+                    <p class="descuento">50%</p>
+                    <p class="aclaracion">* presentar documentación</p>
+                </div>
+                <div id="junior" class="tickets__card">
+                    <h2>Junior</h2>
+                    <p>Tiene un descuento</p>
+                    <p class="descuento">15%</p>
+                    <p class="aclaracion">* presentar documentación</p>
+                </div>
+            </section>
+            <h1><span>venta</span> valor de ticket $200</h1>
+            <form action="" class="tickets__form">
+                <div class="form__userData">
+                    <label for="name">
+                        <input id="name" type="text" placeholder="Nombre" data-valido="false">
+                        <span class="spanAlerta"></span>
+                    </label>
+                    <label for="surname">
+                        <input id="surname" type="text" placeholder="Apellido" data-valido="false">
+                        <span class="spanAlerta"></span>
+                    </label>
+                </div>
+                <label for="email">
+                    <input id="email" type="email" placeholder="Correo@correo.com" data-valido="false">
+                    <span class="spanAlerta"></span>
+                </label>
+                <div class="form__category">
+                    <label for="amount">Cantidad
+                        <input id="amount" type="number" placeholder="Cantidad" data-valido="false">
+                        <span class="spanAlerta"></span>
+                    </label>
+                    <label for="category">Categoria
+                        <select name="category" id="category">
+                            <option value="visitante">Visitante</option>
+                            <option value="estudiante">Estudiante</option>
+                            <option value="trainee">Trainee</option>
+                            <option value="junior">Junior</option>
+                        </select>
+                    </label>
+                </div>
+            </form>
+            <section class="resumen">
+                <p>Total a Pagar: $</p>
+            </section>
+            <div class="botones">
+                <button id="borrar" class="btn btn-borrar">Borrar</button>
+                <button id="resumen" class="btn btn-resumen">Resumen</button>
+            </div>
+            
+        </div>
+    </main>
+    <!-- <img src="../Final_js_front_2021.png" alt=""> -->
+    <footer class="footer">
+        <div class="footer__menu">
+            <a href="#">Preguntas </pre>frecuentes</a>
+            <a href="#">Contáctanos</a>
+            <a href="#">Prensa</a>
+            <a href="#">Conferencias</a>
+            <a href="#">Términos y </pre>condiciones</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Estudiantes</a>
+        </div>
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

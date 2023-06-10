@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+:root{
+	scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.page404{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.sectionH2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+.titleSpan{
+    font-size: .6rem;
+    font-weight: lighter;
+}
+.btn{
+    color:white;
+    border-radius: .2rem;
+    padding: .5rem .5rem .3rem .5rem;
+    border: .1rem solid white
+}
+
+    /* menu */
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #353A40;
+    position: relative;
+}
+    /* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: flex;
+}
+    /* Style the hamburger menu */
+.topnav .icon {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 1.5rem;
+}
+
+/* HEADER */
+/* nav */
+.navContainer{
+    background-color: #353A40;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .3rem 0 .5rem 0;
+}
+.navContainer div{
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    width: 25%;
+}
+.logo h2{
+    color: white;
+    font-weight: lighter;
+}
+.navContainer img{
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav a{
+    padding-right: 1rem;
+    color: #979CA1
+}
+nav li:first-child a{
+    color: white;
+}
+nav li:last-of-type a{
+    color:#2C9E45;
+}
+/* section */
+#laConferencia{
+    background-image: url(../assets/img/hawaii.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-bottom: 1rem;
+}
+.gradient{
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    display: flex;
+    align-items: center
+}
+.conferenciaContent{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    color: white;
+    margin-top: 8rem;
+    margin-right: 1.1rem;
+
+}
+.conferenciaContent p{
+    width: 43%;
+    text-align: right;
+    line-height: 1.4rem;
+}
+.conferenciaContent h1,.conferenciaContent p,.conferencia-btns{
+    margin-bottom: 2rem;
+    margin-right: 5rem;
+}
+.btn-orador{
+    margin-right: .8rem;
+}
+.btn-tickes{
+    border: none;
+    background-color: #29A744;
+}
+
+
+
+/* MAIN */
+/* los oradores */
+#losOradores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.cardContainer{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+}
+.cardContent{
+    padding: 1rem;
+    border-right: 0.1rem solid grey;
+    border-left: 0.1rem solid grey;
+    border-bottom: 0.1rem solid grey;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+.cardContent h2{
+    margin: .1rem 0 1rem 0;
+}
+.card img{
+    width: 100%;
+    aspect-ratio: 30/29;
+    object-fit: cover;
+    border-right: 0.1rem solid grey;
+    border-left: 0.1rem solid grey;
+    border-top: 0.1rem solid grey;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+.cardSkill{
+    display: flex;
+    
+}
+.cardSkill h4{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: .4rem;
+    margin-top: .8rem;
+    padding: .2rem .4rem;
+    border-radius: .2rem;
+}
+/* #FEC105 amarillo */
+/* #17A2B9 celeste */
+.javascript{
+    font-weight: bold;
+    background-color: #FEC105;
+}
+.react{
+    background-color: #17A2B9;
+    color: white;
+}
+.negocios{
+    background-color: #6C757D;
+    color: white;
+}
+.startups{
+    background-color: #DC3546;
+    color: white;
+}
+.cardContent p{
+    font-size: 12px;
+    line-height: 1.6rem;
+}
+
+/* lugar y fecha */
+#lugarFecha{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.honolulu{
+    background-image: url(../assets/img/honolulu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 50%;
+    border-right: 0.1rem solid white;
+}
+.lugarFechaText{
+    background-color: #353A40;
+    color: white;
+    width: 50%;
+    padding: 1rem 1rem 0 1rem;
+}
+.lugarFechaText h2{
+    margin-bottom: .8rem;
+}
+.lugarFechaText p{
+    font-size: .685rem;
+    line-height: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+.btn-conoceMas{
+    font-size: .685rem;
+}
+
+/* conviertete orador */
+#convierteteOrador{
+    width: 50%;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+}
+.anotate{
+    font-size: .8rem;
+    margin-top: 0.8rem;
+}
+.anotate span{
+    text-decoration: underline dotted;
+}
+.formData{
+    width: 100%;
+    margin: .8rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.formData input{
+    width: 48%;
+    padding: .5rem;
+}
+input::placeholder{
+    /* font-size: 12px; */
+    padding-left: .5rem;
+}
+.text{
+    width: 100%;
+}
+.text::placeholder{
+    padding: .5rem 1rem;
+}
+.formData input, .text{
+    border: solid .1rem #eee;
+    border-radius: .2rem;
+}
+.recordatorio{
+    text-align: left;
+    font-size: 12px;
+    color: #9e9e9e;
+    margin: .5rem 0 1rem 0;
+}
+
+.btn-form{
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    background-color: #96C93E;
+    padding: .5rem;
+}
+
+/* FOOTER */
+.footer{
+    background: linear-gradient(to right, #1D3744 0%, #1D5271 100%);
+}
+.footer__menu{
+    width: 80%;
+    height: 12vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__menu a{
+    margin: 2rem;
+    color: white;
+}
+
+@media (max-width: 667px){
+    body{
+        letter-spacing: .1rem;
+    }
+    /* menu */
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        position: relative;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+        /* Style the hamburger menu */
+    .topnav .icon {
+        display: contents;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: white;
+        padding: 1.5rem;
+    }
+
+    .titleSpan{
+        font-size: .8rem;
+    }
+    /* HEADER */
+    .navContainer{
+        width: auto;
+        flex-direction: column;
+        align-items: center
+    }
+    .logo{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    /* nav */
+    nav ul{
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li{
+        margin: .5rem auto;
+    }
+    /* la conferencia */
+    .conferenciaContent {
+        align-items: center;
+        margin: auto;
+    }
+    .conferenciaContent h1{
+        margin: 1.5rem auto;
+    }
+    .conferenciaContent p{
+        width: auto;
+        margin: 1rem 1rem 2rem 1rem;
+        text-align: left;
+    }
+    .conferencia-btns {
+        margin: 0.2rem;
+    }
+    /* MAIN */
+    /* los oradores */
+    .cardContainer {
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    }
+    /* card */
+    .card{
+        flex-direction: column;
+        width: 95%;
+        margin-bottom: 1rem;
+    }
+    .cardContent p {
+        font-size: 1rem;
+    }
+    /* lugar y fecha */
+    #lugarFecha{
+        flex-direction: column-reverse;
+    }
+    .lugarFechaText{
+        padding: 1.5rem
+    }
+    .lugarFechaText p{
+        font-size: 1rem;
+    }
+    .btn-conoceMas {
+        font-size: .9rem;
+    }
+    .honolulu{
+        border: none;
+    }
+    .honolulu, .lugarFechaText{
+        width: auto;
+    }
+    /* conviertete en orador */
+    #convierteteOrador{
+        width: 95%;
+    }
+    .anotate{
+        font-size: 1rem;
+    }
+    /* FOOTER */
+    .footer__menu{
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+    .footer__menu a{
+        margin: .5rem 0;
+    }
+    .footer__menu a:last-child {
+        margin-bottom: 1.5rem;
+    }
+}
+@media (orientation: landscape) and (max-width: 668px){
+    body{
+        letter-spacing: .1rem;
+    }
+        /* menu */
+        /* Style the navigation menu */
+        .topnav {
+            overflow: hidden;
+            position: relative;
+        }
+        /* Hide the links inside the navigation menu (except for logo/home) */
+        .topnav #myLinks {
+            display: none;
+        }
+            /* Style the hamburger menu */
+        .topnav .icon {
+            display: contents;
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .titleSpan{
+            font-size: .8rem;
+        }
+        /* HEADER */
+        .navContainer{
+            width: auto;
+            flex-direction: column;
+            align-items: center
+        }
+        .logo{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+         /* nav */
+        nav ul{
+            list-style: none;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav li{
+            margin: .5rem auto;
+        }
+        /* la conferencia */
+        .conferenciaContent {
+            margin-top: 1rem;
+            padding-bottom: 1rem;
+            align-items: center;
+        }
+        .conferenciaContent h1{
+            margin-bottom: 1.5rem;
+            margin-right: 0;
+        }
+        .conferenciaContent p{
+            margin-right: 0;
+            text-align: left;
+        }
+        .conferencia-btns{
+            margin-right: 0;
+        }
+        /* los oradores */
+        .cardContainer{
+            width: auto;
+        }
+        /* lugar y fecha */
+        #lugarFecha{
+            flex-direction: column-reverse;
+        }
+        .lugarFechaText {
+            padding: 1rem;
+        }
+        .lugarFechaText p{
+            font-size: 1rem;
+        }
+        .btn-conoceMas {
+            font-size: .9rem;
+        }
+        .honolulu{
+            border: none;
+            background-position: bottom;
+        }
+        .honolulu, .lugarFechaText{
+            width: auto;
+        }
+        /* conviertete en orador */
+        .anotate{
+            font-size: 1rem;
+        }
+            /* FOOTER */
+        .footer__menu{
+            height: auto;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 0.5rem;
+        }
+        .footer__menu a{
+            margin: .5rem 0;
+        }
+        .footer__menu a:last-child {
+            margin-bottom: 1.5rem;
+        }
+}
