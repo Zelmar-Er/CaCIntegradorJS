@@ -491,7 +491,7 @@ input::placeholder{
         }
         /* la conferencia */
         #laConferencia,.gradient{
-            height: 130vh;
+            height: 140vh;
         }
         .conferenciaContent {
             padding-bottom: 1rem;
@@ -506,7 +506,13 @@ input::placeholder{
             text-align: left;
         }
         .conferencia-btns{
-            margin-right: 0;
+            width: 70%;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0;
+        }
+        .btn-orador{
+            margin-bottom: 0;
         }
         /* los oradores */
         .cardContainer{
@@ -549,10 +555,4 @@ input::placeholder{
         .footer__menu a:last-child {
             margin-bottom: 1.5rem;
         }
-}
-@media (orientation: landscape) and (max-width: 598px){
-    .conferenciaContent h1{
-        margin-right: auto;
-        margin-left: auto;
-    }
 }
