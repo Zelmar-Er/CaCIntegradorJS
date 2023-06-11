@@ -101,7 +101,8 @@ nav li:last-of-type a{
     height: 100vh;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     display: flex;
-    align-items: center
+    align-items: center;
+    padding-top: 2rem;
 }
 .conferenciaContent{
     display: flex;
@@ -360,6 +361,9 @@ input::placeholder{
         align-items: center;
         margin: auto;
     }
+    .gradient{
+        padding-top: 0;
+    }
     .conferenciaContent h1{
         margin: 1.5rem auto;
     }
@@ -427,6 +431,17 @@ input::placeholder{
         margin-bottom: 1.5rem;
     }
 }
+@media (max-width: 598px){
+    .conferencia-btns {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-orador {
+        margin-right: 0;
+        margin-bottom: .5rem;
+    }
+}
+
 @media (orientation: landscape) and (max-width: 668px){
     body{
         letter-spacing: .1rem;
@@ -475,17 +490,19 @@ input::placeholder{
             margin: .5rem auto;
         }
         /* la conferencia */
+        #laConferencia,.gradient{
+            height: 130vh;
+        }
         .conferenciaContent {
-            margin-top: 1rem;
             padding-bottom: 1rem;
             align-items: center;
         }
         .conferenciaContent h1{
-            margin-bottom: 1.5rem;
-            margin-right: 0;
+            margin-right: auto;
+            margin-left: auto;
         }
         .conferenciaContent p{
-            margin-right: 0;
+            width: 70%;
             text-align: left;
         }
         .conferencia-btns{
@@ -532,4 +549,10 @@ input::placeholder{
         .footer__menu a:last-child {
             margin-bottom: 1.5rem;
         }
+}
+@media (orientation: landscape) and (max-width: 598px){
+    .conferenciaContent h1{
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
